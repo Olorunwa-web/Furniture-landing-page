@@ -3,6 +3,13 @@ import heroimage from '../assets/scandinavian-interior-mockup-wall-decal-backgro
 import bus from '../assets/Group.svg'
 import hours from '../assets/Group (1).svg'
 import sheild from '../assets/shield-1 1.svg'
+import Inspire from '../components/Inspire'; 
+import Beauty from '../components/Beauty';
+import Browse from '../components/Browse';
+import Work from '../components/Work'
+import Prefooter from '../components/Prefooter';
+
+
 
 
 const stages = [
@@ -32,7 +39,7 @@ const stages = [
 const Home = () => {
     return (
         <>
-            <section className ="bg-cover object-fit py-20 md:py-40 bg-no-repeat max-h-screen-xl" style = {{ backgroundImage: `url(${heroimage})`}}>
+            <section className ="bg-cover object-fit py-20 md:py-40 bg-no-repeat " style = {{ backgroundImage: `url(${heroimage})`}}>
                 <section className = 'bord flex justify-end py-4 px-4 h-full mx-auto max-w-screen-xl md:px-20'>
                     <div className = 'bg-[#DFE9F4] p-5 lg:p-7 rounded-[10px]  lg:max-w-1/2'>
                         <h4 className = 'text-base text-[#111111] font-semibold tracking-[.23em]'>New Arrival</h4>
@@ -42,7 +49,7 @@ const Home = () => {
                         <div className = 'w-full py-2'>
                            <p className = 'text-[#333333] tracking-wider font-medium text-base leading-[1.7rem] '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae eligendi ratione accusantium inventore?</p>
                         </div>
-                        <button className = 'mt-4 py-[13px] px-8 bg-[#054C73] rounded-full text-sm text-white font-bold '>BUY NOW</button>
+                        <button className = 'mt-4 py-[13px] w-40 bg-[#054C73] rounded-full text-sm text-white font-bold '>BUY NOW</button>
                     </div>
                 </section>
             </section>
@@ -67,6 +74,11 @@ const Home = () => {
 
             </section>
             </section>
+            <Inspire/>
+            <Beauty/>
+            <Browse/>
+            <Work/>
+            <Prefooter/>
         </>
     )
 }

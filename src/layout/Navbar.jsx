@@ -4,7 +4,7 @@ import { navbar } from '../lib/db';
 import menu from '../assets/Menu Button.svg'
 import close from '../assets/close_20dp_161E54_FILL0_wght400_GRAD0_opsz20.svg';
 import chevron from '../assets/keyboard_arrow_down_20dp_333333_FILL0_wght400_GRAD0_opsz20.svg';
-
+import Footer from '../components/Footer'
 
 const Navbar = () => {
 
@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <>
-            <section className = 'sticky reltive backdrop-blur-md top-0 z-[100] inset-x-0 transition-all w-full bg-white w-full '>
+            <section className = 'sticky reltive  backdrop-blur-md top-0 z-[100] inset-x-0 transition-all w-full bg-white w-full '>
                 <section className = 'py-4 px-2.5 h-full mx-auto max-w-screen-xl md:px-20 z-20'>
                     <section className = 'flex items-center justify-between   '>
                         <div>
@@ -84,6 +84,7 @@ const Navbar = () => {
                 </div>
             </section>
             <Outlet/>
+            <Footer/>
         </>
     )
 }
